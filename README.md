@@ -4,7 +4,7 @@
 - **Grup Üyeleri**: 
   - [24060826 - Ahmet Kahraman]
   - [24061134 - Mehmet İnal]
-- **Dersin Adı**: BİL 304 - İşletim Sistemleri Termprojesi
+- **Dersin Adı**: BİL 304 - İşletim Sistemleri 
 - **Proje Adı**: Over-The-Air (OTA) Firmware Update Sistemi
 - **Akademik Yıl**: [2025-2026]
 - **Ders Hocası**: [Sercan Demirci]
