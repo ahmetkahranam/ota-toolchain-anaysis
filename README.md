@@ -2,21 +2,15 @@
 
 ## Proje Bilgileri
 - **Grup Üyeleri**: 
-  - [Öğr No - Ad Soyad]
-  - [Öğr No - Ad Soyad]
-  - [Öğr No - Ad Soyad]
+  - [24060826 - Ahmet Kahraman]
+  - [24061134 - Mehmet İnal]
 - **Dersin Adı**: BİL 304 - İşletim Sistemleri Termprojesi
 - **Proje Adı**: Over-The-Air (OTA) Firmware Update Sistemi
-- **Akademik Yıl**: [Akademik Yıl]
-- **Ders Hocası**: [Hoca Adı]
+- **Akademik Yıl**: [2025-2026]
+- **Ders Hocası**: [Sercan Demirci]
 
 ## Proje Özeti
 Bu proje, Contiki-NG IoT işletim sistemi üzerinde Over-The-Air (OTA) Firmware Update mekanizmasını implement etmektedir. Sistem, UDP protokolü üzerinden 129,760 baytlık firmware dosyasını, 64 baytlık paketler halinde root node'a göndererek, güvenilir bir şekilde depolama ve yönetimini sağlamaktadır. XOR checksum algoritması ile hata tespiti, Coffee File System (CFS) ile kalıcı depolama, ve dual-slot mimarisi ile güvenli güncelleme yapılmaktadır.
-
-## 📹 Video Linki
-**YouTube Video (High Quality)**: [Video linkini buraya ekle]
-
-*(Bu videoda proje üyeleri yüzleri görünür olacak şekilde Cooja simülasyonunu gösterecekler ve XOR checksum algoritmasını teorik olarak anlatacaklardır.)*
 
 ---
 # MSP430 `.z1` / `.sky` / `ARM M4F(CC1352R)` / `cooja-native` Platformları için Üretilmiş Firmware’ler Üzerinde Yapılabilecek Analiz Türleri Kontrol Listesi
