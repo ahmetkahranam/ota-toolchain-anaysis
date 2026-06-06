@@ -82,13 +82,9 @@ Gömülü sistemlerde kısıtlı kaynakların verimli yönetimi kritik bir önem
 * **Flash Kullanım Miktarı:** Toplam yazılım boyutu (`.text` + `.data`) **42,921 bayt** olarak ölçülmüştür. Bu, OTA üzerinden ağa basılacak toplam paketlerin teorik ana boyutudur.
 * **RAM Kullanım Miktarı:** Toplam statik RAM tüketimi (`.data` + `.bss`) **6,202 bayt** olarak hesaplanmıştır. Zolertia Z1 cihazının toplam 8192 bayt (8 KB) RAM'i olduğu düşünüldüğünde, belleğin yaklaşık **%75'i** statik olarak rezerve edilmiştir.
 
-#### Bellek Kullanım Dağılımı (Pie Chart)
+#### Bellek Kullanım Dağılımı 
 
-```mermaid
-pie title Statik RAM Kullanım Dağılımı
-    ".bss (Sıfırlanmış Veriler)" : 5866
-    ".data (İlk Değerli Veriler)" : 336
-    "Boşta Kalan RAM (Stack/Heap için)" : 1990
+Bellek kullanım analizinde; RAM'in toplam 6.202 baytlık statik kullanımının 5.866 baytlık kısmını .bss (sıfırlanmış) verileri, 336 baytlık kısmını ise .data (ilk değerli) verileri oluşturmaktadır. Geriye kalan ~2 KB'lık alan ise çalışma zamanındaki Stack ve Heap ihtiyaçları için ayrılmıştır.
 
 ---
 
