@@ -131,6 +131,7 @@ if(packet->block_num == expected_block) {
     cfs_close(fd);
     expected_block++;
 }
+```
 ---
 
 # 4. String ve Metadata Analizi
@@ -177,7 +178,9 @@ graph TD
     D --> E[Epilogue: Dönüş değerini R15 register'ına yaz]
     E --> F[Epilogue: R1'i eski yerine al, diğer Registerları POP ile geri yükle]
     F --> G[Dönüş: RET komutu ile çağrıldığı yere geri dön]
+```
 ---
+
 
 # 6. Source-Level Mapping Analizi
 
@@ -294,6 +297,7 @@ sequenceDiagram
     Note left of C: Eğer ACK süresi içinde gelmezse<br/>İstemci aynı paketi (N) tekrar gönderir (Retransmission).
     
     C->>S: simple_udp_sendto(Paket N+1: block_num=1)
+```
 ---
 
 # 10. Wireless / TSCH Analizi
@@ -365,7 +369,7 @@ uint8_t calculate_checksum(const uint8_t *data, uint8_t len) {
     }
     return checksum;
 }
-
+```
 ---
 
 # 13. Güç ve Performans Analizi
@@ -456,6 +460,7 @@ stateDiagram-v2
     ACK_GONDER --> DOGRULAMA_ASAMASI : 130KB Tamamlandı (EOF)
     DOGRULAMA_ASAMASI --> YENIDEN_BASLAT : Nihai XOR/CRC Başarılı
     YENIDEN_BASLAT --> [*]
+```
 ---
 
 # 16. Compiler ve Optimization Analizi
@@ -522,6 +527,7 @@ Projeyi OTA üzerinden gönderilebilir hale getirmek için `msp430-objcopy` arac
 ```bash
 # ELF formatındaki dosyayı ham Binary (.bin) formatına dönüştürme komutu
 msp430-objcopy -O binary udp-server.z1 udp-server.bin
+```
 ---
 # 19. Library ve Archive Analizi
 
@@ -564,6 +570,7 @@ PROCESS_THREAD(udp_server_process, ev, data) {
     // İşlemler...
     PROCESS_END();
 }
+```
 ---
 
 # 21. Güvenlik ve Robustness Analizi
@@ -667,6 +674,7 @@ typedef struct {
     uint8_t  slot_state;    // İmajın mevcut durumu (EMPTY, PENDING vs.)
     uint8_t  reserved;      // Hizalama (Padding) için boş bırakılan alan.
 } ota_boot_metadata_t;
+```
 
 
 # 25. UDP OTA Protokolü Detaylı
@@ -692,7 +700,7 @@ Ağ üzerinden aktarılan her bir UDP payload'u, hem veriyi hem de transferin g�
 +                                                               +
 |                                                               |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-
+```
 # 26. Cooja Simülasyon Sonuçları
 
 Projenin doğrulanması ve ağ üzerindeki davranışların gözlemlenmesi için Cooja simülatörü üzerinde **1 Root (Server)** ve **2 Client (Gönderici)** düğümden oluşan bir ağ topolojisi oluşturulmuştur. Simülasyon, gerçek donanım (Zolertia Z1) kısıtlarını taklit eden bir ortamda çalıştırılmıştır.
